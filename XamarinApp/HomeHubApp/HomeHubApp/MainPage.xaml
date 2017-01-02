@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HomeHubApp"
+             x:Class="HomeHubApp.MainPage">
+
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Button x:Name="btnSignIn"
+            Grid.Row="0"
+            Grid.Column="1"
+            WidthRequest="120"
+            Margin="10,30,10,10"
+            HorizontalOptions="Center"
+            Text="Sign In"
+            Clicked="btnSignIn_Click"/>
+
+    <Label
+            Grid.Row="1"
+            Grid.Column="0"
+            Margin="10"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="Center"
+            Text="Anonymous"/>
+    <Button x:Name="btnPorchLight"
+            Grid.Row="1"
+            Grid.Column="1"
+            WidthRequest="120"
+            Margin="10"
+            HorizontalOptions="Center"
+            Text="Get Porch Light Status"
+            Clicked="btnPorchLight_Click"/>
+
+    <Label
+            Grid.Row="2"
+            Grid.Column="0"
+            Margin="10"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="Center"
+            Text="Authorized"/>
+    <Button x:Name="btnListLights"
+            Grid.Row="2"
+            Grid.Column="1"
+            WidthRequest="120"
+            Margin="10"
+            HorizontalOptions="Center"
+            Text="List Lights"
+            Clicked="btnListLights_Click"/>
+
+    <Label
+            Grid.Row="3"
+            Grid.Column="0"
+            Margin="10"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="Center"
+            Text="Level1 Authorization"/>
+    <Button x:Name="btnLights"
+            Grid.Row="3"
+            Grid.Column="1"
+            WidthRequest="120"
+            Margin="10"
+            HorizontalOptions="Center"
+            Text="Light - Turn on"
+            Clicked="btnLightOn_Click"/>
+
+    <Label
+            Grid.Row="4"
+            Grid.Column="0"
+            Margin="10"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="Center"
+            Text="Secret Authorization"/>
+    <Button x:Name="btnSecretKeys"
+            Grid.Row="4"
+            Grid.Column="1"
+            WidthRequest="120"
+            Margin="10"
+            HorizontalOptions="Center"
+            Text="Get Secret Keys"
+            Clicked="btnSecretKeys_Click"/>
+  </Grid>
+</ContentPage>
